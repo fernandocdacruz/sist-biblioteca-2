@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Biblioteca Universidade Cesumar</title>
+</head>
+<body>
+	<div>
+		<h1>Cadastrar Livros</h1>
+		<form action="../LivroServlet" method="POST">
+		
+			<label for="titulo">Título:</label>
+			<input type="text" name="titulo" required>
+			
+			<label for="titulo">Autor:</label>
+			<input type="text" name="autor" required>
+			
+			<label for="titulo">Ano de publicação:</label>
+			<input type="number" name="anoDePublicacao" min="1000" max="2100" required>
+			
+			<label for="titulo">ISBN:</label>
+			<input type="text" name="isbn" maxlength="13" required>
+			
+			<div>
+				<button type="submit" name="acao" value="cadastrarLivro">Cadastrar</button>
+				<a href="../index.html">Voltar</a>
+			</div>
+			
+		</form>
+	</div>
+</body>
+</html>
